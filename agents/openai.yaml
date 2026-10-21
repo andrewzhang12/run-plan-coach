@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run Plan Coach"
+  short_description: "Purpose-first running intake, plans and review"
+  default_prompt: "Use $run-plan-coach to build a running plan around my goals, recent training and schedule."
