@@ -45,11 +45,12 @@ references/planning.md      Phase/session decisions and revision rules
 references/validation.md    Script interface and limitations
 references/simulation.md    Authorized synthetic-runner testing procedure
 scripts/                    Intake helper, structural validator, and tests
+evaluations/                Artificial runner scenario and feedback
 ```
 
 ## Validation so far
 
-41 software test methods pass, including generated availability and arithmetic cases. One independent synthetic half-marathon persona reviewed a draft, introduced travel and critiqued revisions; a separate agent tested the first reply to a novice without race results. Feedback improved time caps, effort cues, disruption handling and consolidated revisions. Synthetic feedback tests usability and consistency, not physiological outcomes. No exercise or race took place.
+41 software test methods pass, including generated availability and arithmetic cases. One independent synthetic half-marathon persona reviewed a draft, introduced travel and critiqued revisions; a separate agent tested the first reply to a novice without race results. Feedback improved time caps, effort cues, disruption handling and consolidated revisions. Synthetic feedback tests usability and consistency, not physiological outcomes. No exercise or race took place. See the [evaluation report](evaluations/evaluation.md) and [synthetic feedback](evaluations/runner_feedback.md).
 
 ## Development priorities
 

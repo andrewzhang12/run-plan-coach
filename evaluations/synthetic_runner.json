@@ -1,0 +1,66 @@
+{
+  "synthetic": true,
+  "timezone": "Europe/London",
+  "units": "km",
+  "goal": "Finish strongly; sub-2 aspirational",
+  "start_date": "2026-10-26",
+  "event_date": "2027-01-17",
+  "recent_training_km": [
+    19,
+    23,
+    16,
+    25,
+    22
+  ],
+  "longest_recent": {
+    "km": 12,
+    "pace_min_per_km": 6.583333333333333
+  },
+  "availability": {
+    "tuesday_running_minutes": [
+      30,
+      35
+    ],
+    "thursday_running_minutes": 60,
+    "sunday_running_minutes": 120,
+    "saturday_optional_minutes": [
+      30,
+      40
+    ],
+    "friday": "off",
+    "race_day": "whole morning"
+  },
+  "travel": [
+    [
+      "2026-11-23",
+      "2026-11-29"
+    ],
+    [
+      "2026-12-24",
+      "2026-12-28"
+    ]
+  ],
+  "race_results": [
+    {
+      "date": "2026-10-03",
+      "distance_km": 5,
+      "time": "26:18",
+      "context": "flat, hard"
+    },
+    {
+      "date": "2026-09-13",
+      "distance_km": 10,
+      "time": "58:42",
+      "context": "warm, hilly, brief walk"
+    },
+    {
+      "date": "2025-05",
+      "distance_km": 21.0975,
+      "time": "2:16:09",
+      "context": "fast start; walking late"
+    }
+  ],
+  "preferences": "three dependable runs, optional Saturday, simple effort instructions",
+  "limitations": "No current pain. Prior right Achilles soreness above heel after hills; not assessed; no rehabilitation plan.",
+  "facilities": "Lit flat weekday loop; canal in daylight; no home treadmill/gym; hotel treadmill unconfirmed"
+}
