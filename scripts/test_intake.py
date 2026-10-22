@@ -34,4 +34,25 @@ class ConditionalIntakeTests(unittest.TestCase):
     def test_horizon_can_replace_race_date(self):
         p=complete();del p['event_date'];p['horizon_weeks']=8;self.assertEqual(assess(p)['stage'],'provisional_planning')
 
+class PreferenceIntakeTests(unittest.TestCase):
+    def test_optional_preferences_do_not_block_planning(self):
+        r=assess(complete());self.assertEqual(r['stage'],'provisional_planning');self.assertEqual(len(r['preference_questions']),4)
+    def test_explicit_no_preference_skips_questions(self):
+        p=complete();p['preferences']='no_preference';self.assertEqual(assess(p)['preference_questions'],[])
+    def test_zero_workouts_and_weekday_limits_are_known(self):
+        p=complete();p['preferences']={'quality_frequency':0,'long_run_days':['Sunday'],'workout_days':[]};r=assess(p)
+        self.assertFalse(any(q['group'] in ('workout_load','timing') for q in r['preference_questions']))
+    def test_only_missing_timing_detail_is_flagged(self):
+        p=complete();p['preferences']={'long_run_days':['Wednesday']};r=assess(p)
+        q=next(q for q in r['preference_questions'] if q['group']=='timing');self.assertEqual(q['missing'],['workout_days'])
+    def test_complete_preference_profile_reuses_answers(self):
+        p=complete();p['preferences']={'quality_frequency':'unsure','long_run_days':[],'workout_days':[],'workout_style':'simple effort','schedule_style':'flexible','method_preference':'no_preference'}
+        self.assertEqual(assess(p)['preference_questions'],[])
+    def test_method_request_is_not_a_fitness_clearance(self):
+        p=complete();p['preferences']={'method_preference':'Daniels 2Q','quality_frequency':2};del p['recent_training']
+        r=assess(p);self.assertEqual(r['stage'],'intake');self.assertEqual(r['exact_pace_supported'],'not_assessed')
+    def test_malformed_preference_container_has_clear_error(self):
+        p=complete();p['preferences']=[]
+        with self.assertRaises(ValueError):assess(p)
+
 if __name__ == '__main__':unittest.main()

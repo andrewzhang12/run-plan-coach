@@ -22,7 +22,15 @@ Approximate answers are fine:
 
 Do not share credentials or unnecessary sensitive information. Your chosen assistant provider handles what you enter; local code does not make the chat confidential.
 
-## 3. Review the outline
+## 3. State how you like to train
+
+The assistant should ask about missing preferences before selecting a framework: desired number of faster/structured sessions, long runs on weekdays versus weekends, suitable workout days, continuous work versus repetitions, simple effort versus pace targets, and fixed versus flexible scheduling. “No preference—explain a sensible starting point” is a complete answer. A demanding long run also counts when reviewing load.
+
+Ask for the reasoning in everyday terms:
+
+> Based on my preferences and actual time windows, which structure fits and why? Connect each recommendation to a specific concept, explain the tradeoff, and tell me what would be adapted. Don’t recommend a named system just because it sounds authoritative.
+
+## 4. Review the outline
 
 Ask the assistant to explain the goal priority, phase purposes, weekly time/distance ranges, and why the schedule fits your actual starting point. Challenge an assumption before it becomes a workout.
 
@@ -32,11 +40,11 @@ Examples:
 
 > Compare a Pfitzinger-inspired aerobic structure with a Daniels-informed approach. Explain tradeoffs before choosing one; don't combine both complete schedules.
 
-## 4. Get usable workouts
+## 5. Get usable workouts
 
 Each session should have a purpose, total time/distance including easy running, and clear effort or evidence-supported pace. Repeated work needs recovery instructions. Ask for simple effort cues if watch programming is unwanted. The plan should specify what to drop first when life intervenes and what information would justify progression.
 
-## 5. Report what actually happened
+## 6. Report what actually happened
 
 > I shortened Sunday's run because of time, not fatigue. I also have a work trip next week. Revise the affected weeks and return one consolidated current schedule; don't make me catch up mileage.
 

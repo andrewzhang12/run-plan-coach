@@ -28,3 +28,18 @@ Interim advice while awaiting material intake should explain the process or pres
 ## Method preferences
 
 Ask about named-system preferences or previous experience when the choice matters; do not require everyone to pick a philosophy. If a runner names Hudson, Hansons, Pfitzinger or Daniels 2Q, consult [the method reference](training-methods.md) and ask about exact edition/tier only when fidelity matters. A preference does not override feasibility or current fitness. Distinguish a desire for simpler workouts, fewer run days, longer aerobic runs or more flexibility from allegiance to a brand.
+
+## Pre-plan preference questions
+
+After the essential intake, ask a short preference follow-up before choosing a framework. Merge it into the earlier scheduling conversation when natural; reuse known answers and do not repeat resolved time-cap questions. Ask about preferences rather than requiring the runner to name a method. Accept “unsure,” “no preference,” and declining to answer; explain any provisional default. A preference is not a hard constraint unless the runner says it is, and it is not evidence of load tolerance.
+
+Suggested questions:
+
+- How many faster/structured workouts would you enjoy per week: none, one, two, or unsure? Clarify what they mean by workout and separately account for demanding long runs, rather than silently promising two hard workouts plus a hard long run.
+- Do you prefer long runs at weekends, on weekdays, or either? Which days suit workouts? Can any weekday accommodate a longer session within the running-time caps already supplied?
+- Do you like sustained efforts or repetitions, simple effort cues or precise pace instructions? Do you prefer a fixed weekly rhythm or sessions that move around your schedule?
+- Have you liked or disliked any previous approach? “No named-method preference” is enough; ask about edition/tier only when exact adherence is requested.
+
+Record desired workout frequency, preferred long-run/workout days, workout format, scheduling flexibility and any method preference. Check conflicts with actual availability, baseline and recovery before recommending. Do not infer that disliking intervals rules out all Daniels concepts, or that having a weekday window uniquely implies Pfitzinger. Use [fit explanations](training-methods.md#explain-the-fit-from-preferences) to connect preferences to a reasoned recommendation and name alternatives when appropriate.
+
+In the optional Python intake helper, missing preference information appears in `preference_questions` separately from essential `questions`; it does not block provisional planning. Ask only the listed missing parts, not the full template if some parts are known. `preferences: "no_preference"` skips this follow-up entirely. The helper does not select a named plan or establish readiness.

@@ -14,6 +14,34 @@ GROUPS = (
 )
 
 
+PREFERENCE_GROUPS = (
+ ('workout_load', ('quality_frequency',),
+  'How many faster or structured workouts would you prefer per week: none, one, two, or unsure? We will also count a demanding long run when reviewing total load.'),
+ ('timing', ('long_run_days', 'workout_days'),
+  'Would you prefer long runs on weekends, weekdays, or either? Which days suit workouts, and are longer weekday sessions possible within your stated time limits?'),
+ ('format', ('workout_style', 'schedule_style'),
+  'Do you prefer continuous efforts, repetitions, simple effort cues or detailed pace targets? Would you rather have fixed days or a movable weekly sequence?'),
+ ('method', ('method_preference',),
+  'Any training approach you have liked or disliked, or no preference? You do not need to know named plans; we can explain a fit after reviewing your answers.'),
+)
+
+
+def preference_questions(profile):
+    preferences = profile.get('preferences')
+    if preferences == 'no_preference':
+        return []
+    if preferences is None:
+        preferences = {}
+    if not isinstance(preferences, dict):
+        raise ValueError('preferences must be an object or "no_preference"')
+    result = []
+    for group, fields, question in PREFERENCE_GROUPS:
+        missing = [f for f in fields if not present(preferences, f)]
+        if missing:
+            result.append(dict(group=group, missing=missing, question=question, required=False))
+    return result
+
+
 def present(profile, key):
     return key in profile and profile[key] is not None and profile[key] != ''
 
@@ -36,6 +64,7 @@ def assess(profile):
     blocking = [q for q in questions if any(f not in optional_fields for f in q['missing'])]
     # Evidence and representation fields are conditional; completeness is not adequacy.
     return dict(stage='intake' if blocking else 'provisional_planning', questions=questions,
+                preference_questions=preference_questions(profile),
                 exact_pace_supported='not_assessed',
                 note='Reuse known answers; ask only missing material parts of each group. Field presence does not establish adequacy or verified fitness.')
 

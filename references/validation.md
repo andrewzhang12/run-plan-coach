@@ -26,3 +26,7 @@ An empty input or missing dose cannot pass as fully specified. A structurally co
 Review bounds for full session duration at the slower plausible pace; the current script does not calculate duration from pace/repetitions. Phase coverage, stimulus, trail/hill stress, training efficacy and individual recovery remain coaching checks. Flexible day/time-cap plans can be reviewed manually without inventing fixed timestamps.
 
 Future wearable adapters must preserve provenance/units/timezone, reconcile duplicates, and distinguish planned, actual, missing and estimated data. No connector or account is required by this package.
+
+## Optional preference intake
+
+The athlete object may contain `preferences` as an object with `quality_frequency`, `long_run_days`, `workout_days`, `workout_style`, `schedule_style`, and `method_preference`. Values are descriptive preferences reviewed by the agent, not prescribed load. Explicit zero faster workouts, empty day-preference lists, or “unsure” are valid answers. The string `"no_preference"` for the whole preferences value means skip the preference follow-up. Missing fields yield nonblocking `preference_questions` with `required: false`. These do not change the essential-intake gate and do not automatically select a method or determine feasibility. Malformed preference containers are rejected.

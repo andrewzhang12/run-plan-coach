@@ -23,6 +23,8 @@ Use `scripts/intake.py athlete.json` for grouped missing-information prompts if 
 
 ## Plan and review
 
+Before choosing a framework, elicit unresolved everyday preferences: desired structured-workout frequency, preferred long-run and workout days, genuine weekday time windows, effort/pace format and fixed versus flexible scheduling. Reuse known answers, accept no preference, and distinguish preferences from hard limits. Explain the fit using the runner’s answers plus current training evidence and a specific method concept; include adaptations and tradeoffs rather than using a plan name as proof of legitimacy.
+
 Read [planning](references/planning.md). Establish ranked goals and constraints → provisional phases → feasible weekly time/distance ranges → session purposes and rest → complete session doses → review adjacent weeks → iterate. Change targets when constraints conflict. Report genuinely infeasible requirements and present a tradeoff; do not speed up easy running to fit a calendar.
 
 When selecting a philosophy or when a user names a method, read [training methods and hybrids](references/training-methods.md). Make Hudson, Hansons, Pfitzinger and Daniels 2Q available as source-informed options when relevant; do not recite all four or require a brand choice in every intake. Prefer an event-appropriate backbone; explain borrowed principles, prerequisite changes, replacements and shared-load tradeoffs. Translate terminology before mixing and label adaptations honestly. Do not combine complete programs or add their hardest sessions together. A simple effort-based plan remains valid without a named system.

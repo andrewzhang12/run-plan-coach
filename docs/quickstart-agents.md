@@ -30,8 +30,8 @@ No COROS connection, API key or computer-control permission is required. Use ava
 
 1. Inspect available context and distinguish known facts, estimates and aspirations.
 2. Ask grouped questions for material gaps; accept approximate history and effort-based training without races.
-3. Resolve conflicting priorities and hard time limits before fixing mileage.
-4. Explain the phase structure and selected method principles. When hybridizing, disclose which elements replace which, their prerequisites and the shared workload tradeoff.
+3. Elicit missing everyday training preferences without forcing a brand choice; accept no preference. Resolve conflicting priorities and hard time limits before fixing mileage.
+4. Explain the phase structure and fit: connect preferences X/Y and training evidence to a specific method concept, its adaptations and tradeoffs, rather than treating the name as proof. When hybridizing, disclose which elements replace which, their prerequisites and the shared workload tradeoff.
 5. Prescribe complete sessions; review adjacent weeks and return a single current plan after revisions.
 6. For timestamped plans with suitable structured inputs and Python available, run the validator as the skill specifies. For flexible day/time-cap plans, or when execution is unavailable, review the relevant constraints manually and disclose the scope; do not invent timestamps to satisfy a script.
 

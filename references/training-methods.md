@@ -17,6 +17,33 @@ Record the choice by phase, not as a permanent runner identity. An aerobic base 
 | Pfitzinger | Progressive aerobic endurance, distinct run purposes and recovery | Can the runner sustain the endurance structure within time and recovery limits? | Every easy or medium-long run must become a hard progression |
 | Daniels 2Q | Two designated quality sessions in its marathon program, with purpose-specific intensities | Are the two quality doses appropriate within this runner's total workload? | Two hard sessions plus another demanding long run are automatically compatible |
 
+## Explain the fit from preferences
+
+Translate everyday answers into design needs before naming a system. Preferences guide adherence and scheduling; demonstrated training and recovery constrain the dose. These are this project's fit hypotheses, not validated matching rules or proof that a method is superior.
+
+| Preference pattern, if feasible | Concept worth considering | What must still be checked |
+|---|---|---|
+| Wants two substantial anchors and can accommodate their full duration | Daniels 2Q-informed organization, with a long run potentially occupying one anchor | Whether two quality doses fit current training; two short available slots are not automatically enough |
+| Enjoys longer aerobic running and has a midweek endurance window | Pfitzinger-inspired endurance structure and distinct run purposes | Time, supporting volume, recovery, event relevance and the actual long-run preference |
+| Likes frequent manageable outings and regular event-pace practice | Hansons-inspired distributed mileage and event specificity | Whether the surrounding frequency/load really supports the design; shorter long runs are not a standalone shortcut |
+| Needs flexible days and wants changes based on response | Hudson-informed adaptive decisions | A coherent phase goal and dependable minimum structure; flexibility is not randomized intensity |
+| Wants one structured session plus easy weekend endurance | A scaled endurance/threshold hybrid; source ideas can help without adopting an entire branded schedule | This is not unchanged 2Q or the complete Hansons program; respect weekday caps |
+| No method preference, little history or a run/walk goal | Simple effort/time-based consistency before brand selection | Starting load, symptoms, available time and progression; do not invent a named-method rationale |
+
+These features overlap across good coaching systems. Do not treat the table as a quiz that assigns one “correct” coach. A weekday long run can be scheduled under several approaches, and weekend-only long runs do not automatically exclude any philosophy. A hybrid may be a better fit than a full named plan, but it needs the same dose and dependency review.
+
+Use a concise explanation:
+
+> Based on your preference for **X** and available **Y**, a **[name]-inspired structure** is a reasonable starting point because **[specific concept]**. Your current **[training evidence]** supports **[bounded choice]**, while **[constraint or missing evidence]** means we would adapt **[element]**. Compared with **[alternative]**, the tradeoff is **[practical consequence]**. This is a design rationale, not proof of effectiveness or an endorsement by the named coach.
+
+Artificial examples:
+
+- “You enjoy sustained aerobic running and have a genuine midweek time window as well as Sunday. A Pfitzinger-inspired endurance backbone is worth considering because it distinguishes endurance and recovery roles. We would scale duration to your repeatable history, not jump to an 18/55 peak week.”
+- “You want two key sessions, and both windows are long enough. Daniels 2Q-informed organization may fit because quality includes long or mixed-purpose running; we would count the long session as an anchor rather than add a third demanding run. We still need evidence that the dose is repeatable.”
+- “Your workdays change and you prefer simple effort cues. Hudson-style adaptation may help preserve phase goals while moving or adjusting sessions. That does not require maximal hills or changing the whole plan after one bad day.”
+
+Name a philosophy to clarify provenance and tradeoffs, not to lend borrowed authority. If the supplied evidence does not support a recommendation, explain what is unknown rather than using a recognizable name to sound credible.
+
 ## Hudson and Fitzgerald
 
 **Source concept.** In *Run Faster from the 5K to the Marathon*, adaptive running means individualizing training and changing it as the runner responds and develops. The publisher excerpt also describes brief hill sprints and race-pace exposure across the cycle as elements of Hudson's system. [Publisher's author excerpt](https://penguinrandomhousehighereducation.com/book/?isbn=9780767928229)

@@ -2,7 +2,7 @@
 
 A portable agentic skill for running-plan intake, purpose-first training design, and structural validation. It works from a conversation and self-reported training history; no wearable or account connection is required.
 
-**Status:** v0.2.0 prototype. The agent designs and reviews the plan; Python checks selected intake, scheduling and bookkeeping rules. It is not a calibrated physiological, medical or performance-prediction model.
+**Status:** v0.2.1 prototype. The agent designs and reviews the plan; Python checks selected intake, scheduling and bookkeeping rules. It is not a calibrated physiological, medical or performance-prediction model.
 
 > **Experimental LLM-based tool—not professional coaching or medical advice.** AI-generated plans can be wrong or unsuitable. Tests check selected software behavior, not training safety or effectiveness. Read [Important limitations and responsible use](DISCLAIMER.md) before using the skill or its synthetic examples.
 
@@ -21,6 +21,7 @@ A portable agentic skill for running-plan intake, purpose-first training design,
 - Reviews calendar feasibility, supporting recovery, adjacent weeks, disruptions and conditional race goals.
 - Works with effort/time guidance for runners without a watch or representative race results.
 - Separates actual, planned, optional, missing and estimated information.
+- Asks about workout frequency, long-run/workout timing and format preferences before explaining which concepts fit.
 - Explains source-informed training philosophies and allows explicit, workload-aware hybrids rather than stacking complete programs.
 
 ## Use the skill
@@ -64,7 +65,7 @@ evaluations/                Artificial runner scenario and feedback
 
 ## Validation so far
 
-46 software test methods pass, including generated availability and arithmetic cases. One independent synthetic half-marathon persona reviewed a draft, introduced travel and critiqued revisions; a separate agent tested the first reply to a novice without race results. Feedback improved time caps, effort cues, disruption handling and consolidated revisions. A further [synthetic hybrid-method test](evaluations/method-hybrid-forward-test.md) checked that incompatible framework requests trigger clarification rather than workout stacking. Synthetic feedback tests usability and consistency, not physiological outcomes. No exercise or race took place. See the [evaluation report](evaluations/evaluation.md) and [synthetic feedback](evaluations/runner_feedback.md).
+53 software test methods pass, including generated availability and arithmetic cases. One independent synthetic half-marathon persona reviewed a draft, introduced travel and critiqued revisions; a separate agent tested the first reply to a novice without race results. Feedback improved time caps, effort cues, disruption handling and consolidated revisions. A further [synthetic hybrid-method test](evaluations/method-hybrid-forward-test.md) checked that incompatible framework requests trigger clarification rather than workout stacking. Synthetic feedback tests usability and consistency, not physiological outcomes. No exercise or race took place. See the [evaluation report](evaluations/evaluation.md) and [synthetic feedback](evaluations/runner_feedback.md).
 
 ## Development priorities
 
