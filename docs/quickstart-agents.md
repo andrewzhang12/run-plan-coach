@@ -29,7 +29,7 @@ No COROS connection, API key or computer-control permission is required. Use ava
 ## Intake and delivery
 
 1. Inspect available context and distinguish known facts, estimates and aspirations.
-2. Ask grouped questions for material gaps; accept approximate history and effort-based training without races.
+2. Show only one or two short, choice-based questions per reply. Use mileage/time/frequency ranges, day selectors and none/not-sure options; acknowledge replies, branch and advance. Never render the full bank or developer `--audit` output. Accept volunteered detail without forcing repeated selections.
 3. Elicit missing everyday training preferences without forcing a brand choice; accept no preference. Resolve conflicting priorities and hard time limits before fixing mileage.
 4. Explain the phase structure and fit: connect preferences X/Y and training evidence to a specific method concept, its adaptations and tradeoffs, rather than treating the name as proof. When hybridizing, disclose which elements replace which, their prerequisites and the shared workload tradeoff.
 5. Prescribe complete sessions; review adjacent weeks and return a single current plan after revisions.

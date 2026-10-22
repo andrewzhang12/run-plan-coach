@@ -6,11 +6,17 @@ This is an experimental LLM-based aid, not professional coaching or medical advi
 
 In an agent with this skill installed, paste:
 
-> Use run-plan-coach to help me build a running plan. Start by asking for missing goals, schedule, key dates and recent training. Use effort rather than exact pace when the evidence is insufficient. Show the phase outline before detailed workouts.
+> Use run-plan-coach to help me build a running plan. Ask only one or two easy multiple-choice questions at a time, reuse anything I have already told you, and progress through goals, recent running and schedule. Use effort rather than exact pace when the evidence is insufficient. Show the phase outline before detailed workouts.
 
 If the skill is not installed, follow the [agent setup guide](quickstart-agents.md). This repository is a skill/instruction package, not a hosted chatbot or standalone training app. Merely pasting the repository URL does not ensure an assistant has read it.
 
-## 2. Bring what you know
+## 2. Answer a few easy choices at a time
+
+You should get lettered choices, not a long form to fill in. Reply with letters such as `1B, 2A`, select the available controls, or use your own words. “Not sure” and “skip” are valid. The next round should adapt to what you said.
+
+For example, weight training can be answered as none, occasionally, 1–2, 3–4 or 5+ days weekly; running volume can be a range in your preferred units. You do not need to reconstruct an exact training log to begin.
+
+The assistant will collect relevant parts of the following over the conversation—not all in one reply:
 
 Approximate answers are fine:
 

@@ -1,4 +1,4 @@
-"""Group material intake gaps. None/absent means unknown; False/[] can mean none."""
+"""Progressive choice-based intake; use --audit for internal field completeness."""
 import argparse
 import json
 
@@ -72,10 +72,30 @@ def assess(profile):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('athlete_json')
+    parser.add_argument('--continue-survey', action='store_true', help='Continue optional rounds after the preview checkpoint')
+    parser.add_argument('--audit', action='store_true', help='Internal completeness report, not a runner questionnaire')
+    parser.add_argument('--answer', action='append', default=[], metavar='QUESTION=ANSWER', help='Record a choice code or short answer; may repeat')
+    parser.add_argument('--save', help='Explicit destination for updated profile; no file is changed by default')
     args = parser.parse_args()
     try:
         with open(args.athlete_json, encoding='utf-8') as f:
-            print(json.dumps(assess(json.load(f)), indent=2))
+            profile=json.load(f)
+        if args.audit:
+            if args.answer or args.save or args.continue_survey:
+                raise ValueError('--audit cannot be combined with --answer or --save')
+            result=assess(profile)
+        else:
+            from survey import answer, next_round
+            for entry in args.answer:
+                key, separator, reply=entry.partition('=')
+                if not separator:raise ValueError('--answer needs QUESTION=ANSWER')
+                profile=answer(profile,key,reply)
+            result=next_round(profile, continue_survey=args.continue_survey)
+            if args.save:
+                from pathlib import Path
+                out=Path(args.save);out.parent.mkdir(parents=True,exist_ok=True)
+                out.write_text(json.dumps(profile,indent=2)+'\n',encoding='utf-8')
+        print(json.dumps(result,indent=2))
     except (OSError, ValueError) as exc:
         parser.exit(2, f'{exc}\n')
 

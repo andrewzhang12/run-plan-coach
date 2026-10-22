@@ -30,3 +30,11 @@ Future wearable adapters must preserve provenance/units/timezone, reconcile dupl
 ## Optional preference intake
 
 The athlete object may contain `preferences` as an object with `quality_frequency`, `long_run_days`, `workout_days`, `workout_style`, `schedule_style`, and `method_preference`. Values are descriptive preferences reviewed by the agent, not prescribed load. Explicit zero faster workouts, empty day-preference lists, or “unsure” are valid answers. The string `"no_preference"` for the whole preferences value means skip the preference follow-up. Missing fields yield nonblocking `preference_questions` with `required: false`. These do not change the essential-intake gate and do not automatically select a method or determine feasibility. Malformed preference containers are rejected.
+
+## Progressive runner-facing survey
+
+The default intake CLI now uses `survey.py` and emits at most two choice-based questions with stable IDs, option codes, current summary and profile state. `--answer QUESTION=ANSWER` records a selection or short self-report; `--save PATH` is the only persistence operation and is explicit. Existing `assess()` and CLI `--audit` remain developer completeness diagnostics, not consumer questionnaires. See [intake](intake.md#script-and-state) and the [developer quick start](../docs/quickstart-developers.md).
+
+Survey ranges remain labelled ranges; completion does not imply sufficient evidence for precise sessions. Declined or uncertain answers remain unresolved. The survey stage `intake_summary` is not approval to train. An agent must still clarify inconsistent availability, caps, dates, free-text answers and relevant symptoms before claiming an individualized plan.
+
+When the core known facts support a rough outline, the survey defaults to an early summary/preview checkpoint rather than exhausting optional questions; `--continue-survey` resumes them explicitly. No readiness or fitness assessment is made. Common short answers and uncertainty have limited normalization; arbitrary natural-language answers still require agent interpretation.

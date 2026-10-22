@@ -15,7 +15,19 @@ python3 scripts/intake.py examples/athlete-incomplete.json
 python3 scripts/intake.py examples/athlete-effort-only.json
 ```
 
-The first returns grouped missing-information questions. The second can enter provisional planning despite having no race results. Field presence is not proof of adequate history; the agent must inspect values and ask relevant follow-ups. Timezone and units are conditional on calendar and distance outputs. No tool infers a training pace here.
+They return the next one/two choice-based questions or an early outline checkpoint if the core facts are already supplied. No race results are required. An internal completeness diagnostic remains available with `--audit`; do not present that bulk diagnostic to a runner. Field presence is not proof of adequate history; the agent must inspect values and ask relevant follow-ups. Timezone and units are conditional on calendar and distance outputs. No tool infers a training pace here.
+
+## Advance an interactive round
+
+```bash
+python3 scripts/intake.py examples/athlete-new.json
+python3 scripts/intake.py examples/athlete-new.json --answer goal_kind=B --answer priority=A --save local-data/intake.json
+python3 scripts/intake.py local-data/intake.json --answer units=A --save local-data/intake.json
+```
+
+The first command shows goal/priority choices. The second saves those two selections and shows the next round. The third records kilometre units before mileage bands are presented. At a preview checkpoint, offer the runner an outline before more questions; use `--continue-survey` only if they choose to continue optional rounds. Continue using the returned question IDs and options; day answers can use comma-separated letters. The helper never writes to disk unless `--save` is explicitly provided. A new response includes the updated `profile`, `summary` and `unresolved` values.
+
+An `intake_summary` stage is a review point, not a training clearance. The agent must resolve material uncertainty or offer only a bounded general outline. Bands are not converted to exact baselines. Own-word replies are self-reports that the agent must interpret; the script is not a natural-language understanding engine.
 
 ## Check a structural example
 
