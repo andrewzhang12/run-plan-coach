@@ -1,0 +1,56 @@
+{
+  "mode": "planned",
+  "history_review": true,
+  "goal_review": true,
+  "availability": [
+    {
+      "start": "2027-01-05T06:00:00+00:00",
+      "end": "2027-01-05T07:00:00+00:00"
+    },
+    {
+      "start": "2027-01-08T06:00:00+00:00",
+      "end": "2027-01-08T07:00:00+00:00"
+    }
+  ],
+  "windows": [
+    {
+      "id": "fixture-window",
+      "start": "2027-01-04T00:00:00+00:00",
+      "end": "2027-01-11T00:00:00+00:00",
+      "target_km": [
+        9,
+        11
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "id": "fixture-a",
+      "state": "planned",
+      "start": "2027-01-05T06:00:00+00:00",
+      "end": "2027-01-05T06:30:00+00:00",
+      "purpose": "synthetic bookkeeping fixture",
+      "effort": "easy",
+      "constraint_review": true,
+      "components": [
+        {
+          "km": 4
+        }
+      ]
+    },
+    {
+      "id": "fixture-b",
+      "state": "planned",
+      "start": "2027-01-08T06:00:00+00:00",
+      "end": "2027-01-08T06:45:00+00:00",
+      "purpose": "synthetic bookkeeping fixture",
+      "effort": "easy",
+      "constraint_review": true,
+      "components": [
+        {
+          "km": 6
+        }
+      ]
+    }
+  ]
+}

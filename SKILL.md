@@ -1,6 +1,6 @@
 ---
 name: run-plan-coach
-description: Build, revise, or audit running training plans through adaptive intake, purpose-first phase design, evidence-based workout dosing, and schedule validation. Works with self-reported history and race results; wearable connections are optional. Use for running coaching plans rather than general fitness advice or medical diagnosis.
+description: Build, revise, or audit running training plans through adaptive intake, purpose-first phase design, evidence-informed workout dosing, and schedule validation. Works with self-reported history and race results; wearable connections are optional. Use for running coaching plans rather than general fitness advice or medical diagnosis.
 ---
 
 # Run Plan Coach
@@ -13,6 +13,8 @@ Read [limitations](DISCLAIMER.md). At the first substantive plan delivery, give 
 
 ## Intake first
 
+New users can start with the [runner quick start](docs/quickstart-runners.md); setup and executable examples are in the [agent](docs/quickstart-agents.md) and [developer](docs/quickstart-developers.md) guides. These are optional entry routes, not additional mandatory intake.
+
 Read [intake](references/intake.md). If material information is missing, start with a small grouped set of questions about race goals/dates, schedule/conflicts, current training/recovery, and recent races. Accept approximate answers, no races, or no wearable. Ask follow-ups only for gaps that change a decision. Never require a maximum-effort test to unlock a plan.
 
 Distinguish missing from explicitly none and hard constraints from preferences. Do not invent dates, availability or current fitness. A goal time is not training evidence. For new users ask for recent race results at several distances if available, including date and context; do not demand a complete set. Missing pace evidence can support an effort-based plan if training history and schedule are sufficient.
@@ -23,11 +25,13 @@ Use `scripts/intake.py athlete.json` for grouped missing-information prompts if 
 
 Read [planning](references/planning.md). Establish ranked goals and constraints → provisional phases → feasible weekly time/distance ranges → session purposes and rest → complete session doses → review adjacent weeks → iterate. Change targets when constraints conflict. Report genuinely infeasible requirements and present a tradeoff; do not speed up easy running to fit a calendar.
 
+When selecting a philosophy or when a user names a method, read [training methods and hybrids](references/training-methods.md). Make Hudson, Hansons, Pfitzinger and Daniels 2Q available as source-informed options when relevant; do not recite all four or require a brand choice in every intake. Prefer an event-appropriate backbone; explain borrowed principles, prerequisite changes, replacements and shared-load tradeoffs. Translate terminology before mixing and label adaptations honestly. Do not combine complete programs or add their hardest sessions together. A simple effort-based plan remains valid without a named system.
+
 Select pace evidence separately for economy, aerobic power, threshold, marathon specificity and easy endurance. Review combined workload rather than independently selecting the fastest pace in every category. Preserve phase specificity and useful progressive stimulus; avoiding all fatigue is not the goal.
 
 Give the runner a phase outline and weekly ranges; provide day-level specifics to the requested horizon. Where longer plans are provisional, say what later decisions depend on. Include purpose, full time/distance, effort/pace basis, work/recovery details and one practical disruption fallback. Keep reasoning readable and device descriptions short.
 
-For timestamped plans, read [validator interface](references/validation.md) and run `scripts/validate_plan.py plan.json`. Fix structural failures, resolve or disclose coaching-review findings and material unknowns. Do not manufacture timestamps to use the validator when the plan specifies flexible days/time caps; manually check slot and dose feasibility instead and state that scope. A machine result is not evidence of safety, fitness or adaptation.
+For timestamped plans, read [validator interface](references/validation.md) and run `scripts/validate_plan.py plan.json` when the execution environment supports Python. If execution is unavailable, perform the relevant checks manually and disclose that the code was not run. Fix structural failures, resolve or disclose coaching-review findings and material unknowns. Do not manufacture timestamps to use the validator when the plan specifies flexible days/time caps; manually check slot and dose feasibility instead and state that scope. A machine result is not evidence of safety, fitness or adaptation.
 
 ## Adjustments
 

@@ -24,3 +24,7 @@ Give ordinary-language effort cues tailored to the runner's experience. 'Control
 Ask whether race day is an exception to routine time limits. A two-hour Sunday cap does not automatically accommodate a half marathon for a runner whose finish may exceed two hours. Do not let the goal time conceal this conflict.
 
 Interim advice while awaiting material intake should explain the process or preserve an already-established routine; do not assign new volume or intensity when the starting point/limitations are unknown.
+
+## Method preferences
+
+Ask about named-system preferences or previous experience when the choice matters; do not require everyone to pick a philosophy. If a runner names Hudson, Hansons, Pfitzinger or Daniels 2Q, consult [the method reference](training-methods.md) and ask about exact edition/tier only when fidelity matters. A preference does not override feasibility or current fitness. Distinguish a desire for simpler workouts, fewer run days, longer aerobic runs or more flexibility from allegiance to a brand.

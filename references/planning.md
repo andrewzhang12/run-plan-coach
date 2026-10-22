@@ -8,6 +8,10 @@ Use completed, repeatable training as the starting point. Examine duration, freq
 
 Set phase purposes and provisional weekly ranges. Check individual day caps, total time and practical transitions before committing volume. Progress, consolidate and taper in service of the actual goal. Weight loss, strength, other sports and life stress can compete with recovery; do not promise simultaneous maximization. Prioritize and revisit.
 
+## Method choice
+
+Use [training philosophies and hybrids](training-methods.md) when a framework choice is relevant. Explain why its principles fit the goal, phase, history and schedule. A hybrid needs explicit purpose, replacement and workload accounting; a named source does not grant permission to add load. Distinguish the source philosophy from this skill's adaptations.
+
 ## Session prescription
 
 Answer internally: why this session, why now, what current evidence supports it, what total dose achieves the stimulus, what follows it, and how will execution/recovery be assessed? Ask the runner when a material answer cannot be inferred.

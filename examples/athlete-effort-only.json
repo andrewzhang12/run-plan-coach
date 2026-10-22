@@ -1,0 +1,29 @@
+{
+  "goal": "Build a repeatable run/walk routine; no race",
+  "start_date": "2027-01-04",
+  "horizon_weeks": 8,
+  "other_key_dates": [],
+  "availability": {
+    "days_vary": true,
+    "reliable_sessions_per_week": 3,
+    "minutes_per_session": 30
+  },
+  "rest_preferences": "Choose days after shifts are posted; avoid consecutive demanding days",
+  "recent_training": {
+    "completed_weeks_minutes": [
+      40,
+      50,
+      45,
+      50
+    ],
+    "notes": "Two easy walk/jog outings most weeks; fictional data"
+  },
+  "longest_recent": {
+    "minutes": 25,
+    "effort": "comfortable walk/jog"
+  },
+  "running_limitations": false,
+  "race_results": [],
+  "calendar_export": false,
+  "distance_prescriptions": false
+}

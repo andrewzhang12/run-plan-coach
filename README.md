@@ -2,9 +2,16 @@
 
 A portable agentic skill for running-plan intake, purpose-first training design, and structural validation. It works from a conversation and self-reported training history; no wearable or account connection is required.
 
-**Status:** v0.1.1 prototype. The agent designs and reviews the plan; Python checks selected intake, scheduling and bookkeeping rules. It is not a calibrated physiological, medical or performance-prediction model.
+**Status:** v0.2.0 prototype. The agent designs and reviews the plan; Python checks selected intake, scheduling and bookkeeping rules. It is not a calibrated physiological, medical or performance-prediction model.
 
 > **Experimental LLM-based tool—not professional coaching or medical advice.** AI-generated plans can be wrong or unsuitable. Tests check selected software behavior, not training safety or effectiveness. Read [Important limitations and responsible use](DISCLAIMER.md) before using the skill or its synthetic examples.
+
+## Quick start
+
+- **Runners:** [start a coaching conversation](docs/quickstart-runners.md)—no watch, race results or Python required.
+- **Agents and Codex users:** [install/load the skill](docs/quickstart-agents.md).
+- **Developers:** [run working JSON examples and checks](docs/quickstart-developers.md).
+- **Choosing an approach:** [Hudson, Hansons, Pfitzinger, Daniels 2Q and deliberate hybrids](references/training-methods.md).
 
 ## What it does
 
@@ -14,6 +21,7 @@ A portable agentic skill for running-plan intake, purpose-first training design,
 - Reviews calendar feasibility, supporting recovery, adjacent weeks, disruptions and conditional race goals.
 - Works with effort/time guidance for runners without a watch or representative race results.
 - Separates actual, planned, optional, missing and estimated information.
+- Explains source-informed training philosophies and allows explicit, workload-aware hybrids rather than stacking complete programs.
 
 ## Use the skill
 
@@ -47,13 +55,16 @@ references/intake.md        Adaptive questions and evidence handling
 references/planning.md      Phase/session decisions and revision rules
 references/validation.md    Script interface and limitations
 references/simulation.md    Authorized synthetic-runner testing procedure
+references/training-methods.md  Training concepts, translation and hybrid rules
+docs/                       Runner, agent and developer quick starts
+examples/                   Artificial runnable JSON fixtures
 scripts/                    Intake helper, structural validator, and tests
 evaluations/                Artificial runner scenario and feedback
 ```
 
 ## Validation so far
 
-41 software test methods pass, including generated availability and arithmetic cases. One independent synthetic half-marathon persona reviewed a draft, introduced travel and critiqued revisions; a separate agent tested the first reply to a novice without race results. Feedback improved time caps, effort cues, disruption handling and consolidated revisions. Synthetic feedback tests usability and consistency, not physiological outcomes. No exercise or race took place. See the [evaluation report](evaluations/evaluation.md) and [synthetic feedback](evaluations/runner_feedback.md).
+46 software test methods pass, including generated availability and arithmetic cases. One independent synthetic half-marathon persona reviewed a draft, introduced travel and critiqued revisions; a separate agent tested the first reply to a novice without race results. Feedback improved time caps, effort cues, disruption handling and consolidated revisions. A further [synthetic hybrid-method test](evaluations/method-hybrid-forward-test.md) checked that incompatible framework requests trigger clarification rather than workout stacking. Synthetic feedback tests usability and consistency, not physiological outcomes. No exercise or race took place. See the [evaluation report](evaluations/evaluation.md) and [synthetic feedback](evaluations/runner_feedback.md).
 
 ## Development priorities
 
