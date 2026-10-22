@@ -7,6 +7,10 @@ description: Build, revise, or audit running training plans through adaptive int
 
 Create a feasible, explainable running plan, not a calendar filled to a mileage quota. Work for an unfamiliar runner without connected accounts. Reuse relevant known preferences and recent evidence, confirming only what may have changed. Do not import another athlete's preferences, volume, race ambitions, or timelines.
 
+## Scope and disclosure
+
+Read [limitations](DISCLAIMER.md). At the first substantive plan delivery, give a brief notice that this is experimental LLM-assisted planning, not professional coaching or medical advice, and that structural checks do not validate safety or effectiveness. Do not repeat boilerplate in every follow-up. Keep consequential uncertainty and relevant health/privacy limitations beside the affected advice. Do not imply certification, professional supervision, clinical assessment, guaranteed improvement or endorsement by a named organization.
+
 ## Intake first
 
 Read [intake](references/intake.md). If material information is missing, start with a small grouped set of questions about race goals/dates, schedule/conflicts, current training/recovery, and recent races. Accept approximate answers, no races, or no wearable. Ask follow-ups only for gaps that change a decision. Never require a maximum-effort test to unlock a plan.

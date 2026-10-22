@@ -2,7 +2,9 @@
 
 A portable agentic skill for running-plan intake, purpose-first training design, and structural validation. It works from a conversation and self-reported training history; no wearable or account connection is required.
 
-**Status:** v0.1.0 prototype. The agent designs and reviews the plan; Python checks selected intake, scheduling and bookkeeping rules. It is not a calibrated physiological, medical or performance-prediction model.
+**Status:** v0.1.1 prototype. The agent designs and reviews the plan; Python checks selected intake, scheduling and bookkeeping rules. It is not a calibrated physiological, medical or performance-prediction model.
+
+> **Experimental LLM-based tool—not professional coaching or medical advice.** AI-generated plans can be wrong or unsuitable. Tests check selected software behavior, not training safety or effectiveness. Read [Important limitations and responsible use](DISCLAIMER.md) before using the skill or its synthetic examples.
 
 ## What it does
 
@@ -38,6 +40,7 @@ See [interface and limits](references/validation.md) for inputs. The plan checke
 ## Repository layout
 
 ```text
+DISCLAIMER.md               LLM, health, validation and privacy limitations
 SKILL.md                    Agent instructions and workflow
 agents/openai.yaml          Codex display metadata
 references/intake.md        Adaptive questions and evidence handling
@@ -64,3 +67,7 @@ evaluations/                Artificial runner scenario and feedback
 The repository contains no personal runner logs, credentials or live-account integrations. Keep any future personal inputs outside tracked files, for example in ignored `local-data/`. Device predictions are estimates; missing records are unknown, and duplicate provider activities need reconciliation before totals.
 
 This prototype links to source guidance rather than redistributing proprietary training plans.
+
+## Disclaimers and licensing
+
+Read [DISCLAIMER.md](DISCLAIMER.md) for the project’s professional, health, AI-reliability, testing, privacy and affiliation limits. Making this repository public does not grant an open-source license; no such license is included at present.
